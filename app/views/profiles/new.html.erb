@@ -1,0 +1,9 @@
+<%= form_for @profile, url: profiles_path, html: { multipart: true } do |f| %>
+  <div class="field">
+    <%= f.text_area :bio, placeholder: "write a bio..." %>
+  </div>
+    <%= f.submit "create profile", class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :avatar %>
+  </span>
+<% end %>
