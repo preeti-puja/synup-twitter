@@ -14,7 +14,7 @@ class MicropostsController < ApplicationController
   end
 
   def index
-    @microposts = Micropost.all
+    @microposts = current_user.microposts.all
   end
 
   def Tweet
