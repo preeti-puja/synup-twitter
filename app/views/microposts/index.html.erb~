@@ -1,0 +1,8 @@
+<table>
+  <% @microposts.each do |micropost| %>
+  <tr>
+    <td><%= micropost.content %></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>

@@ -13,7 +13,8 @@ class MicropostsController < ApplicationController
     end
   end
 
-  def destroy
+  def index
+    @microposts = Micropost.all
   end
 
   def Tweet

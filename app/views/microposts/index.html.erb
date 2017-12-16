@@ -1,0 +1,8 @@
+<table>
+  <% @microposts.each do |micropost| %>
+  <tr>
+    <td><%= micropost.content %></td>
+    <td><%= image_tag micropost.avatar.url %></td>
+  </tr>
+  <% end %>
+</table>
