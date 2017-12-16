@@ -19,7 +19,7 @@ class ProfilesController < ApplicationController
     end
   end
 
-  def edit
+  def show
     @profile = Profile.find(params[:id])
   end
 

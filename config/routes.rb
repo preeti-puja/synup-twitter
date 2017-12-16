@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   resources :profiles
   resources :microposts
 
-  resources :users, only: [:show, :index]
+  resources :users, only: [:show, :index] do
+    member do
+      get :following, :followers
+    end
+  end
+  resources :relationships,       only: [:create, :destroy]
 end
